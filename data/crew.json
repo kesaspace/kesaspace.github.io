@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Jebediah Kerman",
+    "role": "Pilot",
+    "status": "Active",
+    "missions": [],
+    "ribbons": [],
+    "joined": "Y1-D1",
+    "notes": "Fearless. Possibly too fearless."
+  },
+  {
+    "name": "Bill Kerman",
+    "role": "Engineer",
+    "status": "Active",
+    "missions": [],
+    "ribbons": [],
+    "joined": "Y1-D1",
+    "notes": "Fixes things. Worries about everything."
+  },
+  {
+    "name": "Bob Kerman",
+    "role": "Scientist",
+    "status": "Active",
+    "missions": [],
+    "ribbons": [],
+    "joined": "Y1-D1",
+    "notes": "Terrified of space. Excellent at science."
+  },
+  {
+    "name": "Valentina Kerman",
+    "role": "Pilot",
+    "status": "Active",
+    "missions": [],
+    "ribbons": [],
+    "joined": "Y1-D1",
+    "notes": "Calm under pressure. The Director's favorite."
+  }
+]

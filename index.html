@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KESA Space — Mission Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚀 KESA SPACE</h1>
+        <div class="subtitle" id="agency-fullname">Kerbal Exploration &amp; Space Administration</div>
+        <div class="motto" id="agency-motto"></div>
+    </header>
+
+    <nav>
+        <button class="active" onclick="showPage('home')">Home</button>
+        <button onclick="showPage('missions')">Missions</button>
+        <button onclick="showPage('crew')">Crew</button>
+        <button onclick="showPage('programs')">Programs</button>
+        <button onclick="showPage('vehicles')">Vehicles</button>
+    </nav>
+
+    <main>
+        <!-- HOME -->
+        <section id="page-home">
+            <div class="stats" id="home-stats"></div>
+            <div class="wall-quote" id="wall-quote"></div>
+            <div class="two-col">
+                <div>
+                    <h2 class="section-title">Recent Missions</h2>
+                    <div id="recent-missions"></div>
+                </div>
+                <div>
+                    <h2 class="section-title">Active Programs</h2>
+                    <div id="active-programs"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSIONS -->
+        <section id="page-missions" style="display:none">
+            <div class="stats" id="mission-stats"></div>
+            <h2 class="section-title">Mission Log</h2>
+            <div class="filter-bar">
+                <select id="filter-project" onchange="renderMissions()">
+                    <option value="all">All Projects</option>
+                </select>
+                <select id="filter-result" onchange="renderMissions()">
+                    <option value="all">All Results</option>
+                    <option value="success">Success</option>
+                    <option value="failure">Failure</option>
+                    <option value="partial">Partial</option>
+                    <option value="pending">Pending</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mission</th>
+                        <th>Date</th>
+                        <th>Project</th>
+                        <th>Vehicle</th>
+                        <th>Crew</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="mission-table"></tbody>
+            </table>
+        </section>
+
+        <!-- CREW -->
+        <section id="page-crew" style="display:none">
+            <div class="stats" id="crew-stats"></div>
+            <h2 class="section-title">Active Roster</h2>
+            <div id="crew-list"></div>
+            <div class="memorial" id="memorial" style="display:none">
+                <h2 class="section-title memorial-title">Memorial Wall</h2>
+                <div id="memorial-list"></div>
+            </div>
+        </section>
+
+        <!-- PROGRAMS -->
+        <section id="page-programs" style="display:none">
+            <h2 class="section-title">Exploration Programs</h2>
+            <div id="programs-exploration" class="card-grid"></div>
+            <h2 class="section-title">Infrastructure</h2>
+            <div id="programs-infrastructure" class="card-grid"></div>
+            <h2 class="section-title">Operations</h2>
+            <div id="programs-operations" class="card-grid"></div>
+            <h2 class="section-title">Space Stations</h2>
+            <div id="stations-list" class="card-grid"></div>
+        </section>
+
+        <!-- VEHICLES -->
+        <section id="page-vehicles" style="display:none">
+            <h2 class="section-title">Launch Vehicles &amp; Aircraft</h2>
+            <div id="vehicles-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        KESA Space — Powered by artificial intelligence and natural stupidity.<br>
+        <span id="agency-bio"></span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
