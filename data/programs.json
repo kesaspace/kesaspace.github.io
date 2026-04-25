@@ -1,132 +1,32 @@
 [
   {
-    "id": "yggdrasil",
-    "name": "Yggdrasil",
-    "figure": "The World Tree",
-    "target": "Suborbital",
+    "id": "classified-1",
+    "name": "[GEHEIM]",
+    "figure": "???",
+    "target": "CLASSIFIED",
     "type": "exploration",
     "era": 0,
-    "status": "upcoming",
-    "description": "Sounding rockets. KESA's first steps upward."
+    "status": "classified",
+    "description": "This program has not been declassified yet."
   },
   {
-    "id": "val",
-    "name": "VAL (Valkyrie Aeronautics)",
-    "figure": "The Valkyries",
-    "target": "Atmospheric",
+    "id": "classified-2",
+    "name": "[GEHEIM]",
+    "figure": "???",
+    "target": "CLASSIFIED",
     "type": "exploration",
     "era": 0,
-    "status": "upcoming",
-    "description": "Aircraft program. Learning to fly before learning to orbit."
+    "status": "classified",
+    "description": "This program has not been declassified yet."
   },
   {
-    "id": "ratatoskr",
-    "name": "Ratatoskr",
-    "figure": "The squirrel on Yggdrasil",
-    "target": "Kerbin Orbit",
-    "type": "exploration",
-    "era": 1,
-    "status": "planned",
-    "description": "First orbital flights. Going up and coming back."
-  },
-  {
-    "id": "heimdall",
-    "name": "Heimdall",
-    "figure": "Guardian of the gods",
-    "target": "Mün",
-    "type": "exploration",
-    "era": 2,
-    "status": "planned",
-    "description": "Munar exploration. Flybys, orbits, landings."
-  },
-  {
-    "id": "idun",
-    "name": "Idun",
-    "figure": "Keeper of golden apples",
-    "target": "Minmus",
-    "type": "exploration",
-    "era": 2,
-    "status": "planned",
-    "description": "Minmus exploration. Small, precious, close."
-  },
-  {
-    "id": "tyr",
-    "name": "Tyr",
-    "figure": "God of victory",
-    "target": "Duna",
-    "type": "exploration",
-    "era": 3,
-    "status": "planned",
-    "description": "Duna missions. The red one."
-  },
-  {
-    "id": "freya",
-    "name": "Freya",
-    "figure": "Goddess of beauty",
-    "target": "Eve",
-    "type": "exploration",
-    "era": 3,
-    "status": "planned",
-    "description": "Eve missions. Good luck getting back."
-  },
-  {
-    "id": "odin",
-    "name": "Odin",
-    "figure": "The Allfather",
-    "target": "Jool System",
-    "type": "exploration",
-    "era": 3,
-    "status": "planned",
-    "description": "Jool system exploration. The grand tour."
-  },
-  {
-    "id": "mimir",
-    "name": "Mimir",
-    "figure": "Keeper of the well of wisdom",
-    "target": "Infrastructure",
+    "id": "classified-3",
+    "name": "[VERTRAULICH]",
+    "figure": "???",
+    "target": "CLASSIFIED",
     "type": "infrastructure",
     "era": 1,
-    "status": "planned",
-    "description": "Communication relay network."
-  },
-  {
-    "id": "gjallarhorn",
-    "name": "Gjallarhorn",
-    "figure": "Heimdall's horn",
-    "target": "Infrastructure",
-    "type": "infrastructure",
-    "era": 2,
-    "status": "planned",
-    "description": "Deep Space Network. Interplanetary relays."
-  },
-  {
-    "id": "huginn",
-    "name": "Huginn",
-    "figure": "Odin's raven (Thought)",
-    "target": "Mapping",
-    "type": "infrastructure",
-    "era": 1,
-    "status": "planned",
-    "description": "SCANsat mapping and survey probes."
-  },
-  {
-    "id": "fafnir",
-    "name": "Fafnir",
-    "figure": "The gold-hoarding dragon",
-    "target": "Revenue",
-    "type": "operations",
-    "era": 0,
-    "status": "upcoming",
-    "description": "Revenue flights. Contracts for funds. No shame."
-  },
-  {
-    "id": "kvasir",
-    "name": "Kvasir",
-    "figure": "Wisest being ever",
-    "target": "Science",
-    "type": "operations",
-    "era": 0,
-    "status": "upcoming",
-    "description": "Science harvesting missions."
+    "status": "classified",
+    "description": "Details restricted. Internal KESA only."
   }
 ]

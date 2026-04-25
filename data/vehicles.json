@@ -1,38 +1,10 @@
 [
   {
-    "id": "dagr",
-    "name": "Dagr",
-    "figure": "God of day",
-    "role": "Standard Launch Vehicle",
-    "variants": [
-      {"designation": "Dagr-1", "config": "Gen 1, no SRBs", "status": "planned"},
-      {"designation": "Dagr-1.2", "config": "Gen 1, 2 SRBs", "status": "planned"},
-      {"designation": "Dagr-2", "config": "Gen 2, no SRBs", "status": "planned"}
-    ]
-  },
-  {
-    "id": "sleipnir",
-    "name": "Sleipnir",
-    "figure": "Odin's eight-legged horse",
-    "role": "Heavy Lift",
+    "id": "classified",
+    "name": "[CLASSIFIED]",
+    "figure": "Information restricted",
+    "role": "Launch Vehicle Program",
     "variants": [],
-    "status": "reserved"
-  },
-  {
-    "id": "val",
-    "name": "VAL (Valkyrie Aeronautics)",
-    "figure": "The Valkyries",
-    "role": "Aircraft",
-    "variants": [
-      {"designation": "VAL-1", "config": "First aircraft", "status": "planned"}
-    ]
-  },
-  {
-    "id": "hraevelg",
-    "name": "Hraevelg",
-    "figure": "Giant eagle at world's edge",
-    "role": "SSTO Spaceplane",
-    "variants": [],
-    "status": "reserved"
+    "status": "classified"
   }
 ]
