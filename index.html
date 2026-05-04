@@ -14,7 +14,7 @@
     </header>
 
     <nav>
-        <button class="active" onclick="showPage('home')">Home</button>
+        <button class="active" onclick="showPage('home')">News</button>
         <button onclick="showPage('missions')">Missions</button>
         <button onclick="showPage('crew')">Crew</button>
         <button onclick="showPage('programs')">Programs</button>
@@ -22,20 +22,12 @@
     </nav>
 
     <main>
-        <!-- HOME -->
+        <!-- HOME / NEWS -->
         <section id="page-home">
             <div class="stats" id="home-stats"></div>
             <div class="wall-quote" id="wall-quote"></div>
-            <div class="two-col">
-                <div>
-                    <h2 class="section-title">Recent Missions</h2>
-                    <div id="recent-missions"></div>
-                </div>
-                <div>
-                    <h2 class="section-title">Active Programs</h2>
-                    <div id="active-programs"></div>
-                </div>
-            </div>
+            <h2 class="section-title">KESA News</h2>
+            <div id="news-feed"></div>
         </section>
 
         <!-- MISSIONS -->

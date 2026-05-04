@@ -281,3 +281,43 @@ footer {
     border-top: 1px solid #1e2a3a;
     margin-top: 3rem;
 }
+
+/* NEWS FEED */
+.news-item {
+    border: 1px solid #1e2a3a;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+}
+.news-item:hover { border-color: #feca57; }
+.news-item .news-date {
+    font-size: 0.7rem;
+    color: #576574;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.news-item .news-type {
+    display: inline-block;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.5rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.news-type-press-release { background: #1e2a3a; color: #54a0ff; }
+.news-type-mission-update { background: #1e2a3a; color: #2ed573; }
+.news-type-declassification { background: #1e2a3a; color: #feca57; }
+.news-type-intel-leak { background: #2d1a1a; color: #ff4757; }
+.news-type-milestone { background: #1e2a3a; color: #feca57; }
+.news-item .news-headline {
+    font-size: 1.05rem;
+    color: #f5f6fa;
+    font-weight: bold;
+    margin-top: 0.4rem;
+}
+.news-item .news-body {
+    font-size: 0.85rem;
+    color: #c8d6e5;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}

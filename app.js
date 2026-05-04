@@ -7,6 +7,7 @@ let crew = [];
 let programs = [];
 let vehicles = [];
 let stations = [];
+let news = [];
 
 // --- DATA LOADING ---
 
@@ -27,6 +28,7 @@ async function loadAllData() {
     programs = await loadJSON('data/programs.json');
     vehicles = await loadJSON('data/vehicles.json');
     stations = await loadJSON('data/stations.json');
+    news = await loadJSON('data/news.json');
 
     renderAgency();
     renderHome();
@@ -43,7 +45,8 @@ function showPage(page) {
     document.querySelectorAll('main > section').forEach(s => s.style.display = 'none');
     document.getElementById('page-' + page).style.display = 'block';
     document.querySelectorAll('nav button').forEach(b => {
-        b.className = b.textContent.toLowerCase() === page ? 'active' : '';
+        const btnPage = b.textContent.toLowerCase() === 'news' ? 'home' : b.textContent.toLowerCase();
+        b.className = btnPage === page ? 'active' : '';
     });
 }
 
@@ -89,37 +92,31 @@ function renderHome() {
     const total = missions.length;
     const success = missions.filter(m => m.result === 'success').length;
     const crewCount = crew.length;
-    const activePrograms = programs.filter(p => p.status === 'upcoming' || p.status === 'active').length;
+    const newsCount = news.length;
 
     document.getElementById('home-stats').innerHTML =
         statBox(total, 'Missions') +
         statBox(success, 'Successful') +
         statBox(crewCount, 'Crew') +
-        statBox(activePrograms, 'Active Programs');
+        statBox(newsCount, 'Updates');
 
-    // Recent missions (last 5)
-    const recent = [...missions].reverse().slice(0, 5);
-    const el = document.getElementById('recent-missions');
-    if (recent.length === 0) {
-        el.innerHTML = '<div class="empty">No missions yet. The launchpad awaits.</div>';
-    } else {
-        el.innerHTML = recent.map(m =>
-            `<div style="padding:0.4rem 0;border-bottom:1px solid #1e2a3a;font-size:0.82rem">
-                <span class="result-${m.result}">${resultIcon(m.result)}</span>
-                <strong>${m.id}</strong> — ${m.summary}
-            </div>`
-        ).join('');
+    // News feed (newest first)
+    const feed = document.getElementById('news-feed');
+    if (news.length === 0) {
+        feed.innerHTML = '<div class="empty">No news yet. Stand by for updates.</div>';
+        return;
     }
 
-    // Active programs
-    const active = programs.filter(p => p.status === 'upcoming' || p.status === 'active');
-    const pel = document.getElementById('active-programs');
-    pel.innerHTML = active.map(p =>
-        `<div style="padding:0.4rem 0;border-bottom:1px solid #1e2a3a;font-size:0.82rem">
-            <strong>${p.name}</strong> — <span style="color:#576574">${p.target}</span>
-            <div style="color:#576574;font-size:0.75rem">${p.description}</div>
-        </div>`
-    ).join('');
+    feed.innerHTML = [...news].reverse().map(n => {
+        const typeClass = 'news-type-' + (n.type || 'press-release');
+        const typeLabel = (n.type || 'update').replace('-', ' ');
+        return `<div class="news-item">
+            <span class="news-date">${n.date}</span>
+            <span class="news-type ${typeClass}">${typeLabel}</span>
+            <div class="news-headline">${n.headline}</div>
+            <div class="news-body">${n.body}</div>
+        </div>`;
+    }).join('');
 }
 
 // --- RENDER: MISSIONS ---
