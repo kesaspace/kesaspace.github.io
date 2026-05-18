@@ -1,0 +1,114 @@
+[
+  {
+    "date": "Y1-D1",
+    "title": "KESA Founded",
+    "description": "Kermany establishes its national aerospace agency.",
+    "era": 0,
+    "status": "completed",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "First Aircraft Flight",
+    "description": "VAL-1 takes to the sky.",
+    "era": 0,
+    "status": "upcoming",
+    "type": "mission"
+  },
+  {
+    "date": "",
+    "title": "First Sounding Rocket",
+    "description": "Yggdrasil-1 reaches for the upper atmosphere.",
+    "era": 0,
+    "status": "upcoming",
+    "type": "mission"
+  },
+  {
+    "date": "",
+    "title": "Touch Space (70km)",
+    "description": "A KESA rocket crosses the boundary of space.",
+    "era": 0,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "First Satellite",
+    "description": "Ratatoskr-1 achieves stable orbit around Kerbin.",
+    "era": 1,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "First Crewed Flight",
+    "description": "A Kerbal flies to space and returns safely.",
+    "era": 1,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "Communication Network",
+    "description": "Mimir relay constellation provides global coverage.",
+    "era": 1,
+    "status": "planned",
+    "type": "infrastructure"
+  },
+  {
+    "date": "",
+    "title": "First Crewed Orbit",
+    "description": "A Kerbal orbits Kerbin and returns.",
+    "era": 1,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "Mün Flyby",
+    "description": "Heimdall program sends a probe past the Mün.",
+    "era": 2,
+    "status": "planned",
+    "type": "mission"
+  },
+  {
+    "date": "",
+    "title": "Space Station",
+    "description": "Asgard — first permanent presence in orbit.",
+    "era": 2,
+    "status": "planned",
+    "type": "infrastructure"
+  },
+  {
+    "date": "",
+    "title": "Mün Landing",
+    "description": "Kerbals walk on the Mün.",
+    "era": 2,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "Interplanetary Probe",
+    "description": "First probe leaves Kerbin's sphere of influence.",
+    "era": 3,
+    "status": "planned",
+    "type": "mission"
+  },
+  {
+    "date": "",
+    "title": "Duna Orbit",
+    "description": "Tyr program reaches the red planet.",
+    "era": 3,
+    "status": "planned",
+    "type": "milestone"
+  },
+  {
+    "date": "",
+    "title": "Duna Landing",
+    "description": "Boots on Duna.",
+    "era": 3,
+    "status": "planned",
+    "type": "milestone"
+  }
+]

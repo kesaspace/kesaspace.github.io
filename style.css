@@ -321,3 +321,84 @@ footer {
     margin-top: 0.5rem;
     line-height: 1.5;
 }
+
+/* TIMELINE */
+.timeline-legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    color: #576574;
+}
+.tl-legend-item { display: flex; align-items: center; gap: 0.4rem; }
+.tl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.tl-completed { background: #2ed573; }
+.tl-upcoming { background: #54a0ff; }
+.tl-planned { background: #576574; }
+
+.timeline-era {
+    margin-bottom: 2rem;
+}
+.timeline-era-title {
+    font-size: 0.8rem;
+    color: #feca57;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #1e2a3a;
+}
+
+.tl-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-left: 2px solid #1e2a3a;
+    padding-left: 1.2rem;
+    margin-left: 5px;
+    position: relative;
+}
+.tl-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0.85rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.tl-item.tl-status-completed::before { background: #2ed573; }
+.tl-item.tl-status-upcoming::before { background: #54a0ff; }
+.tl-item.tl-status-planned::before { background: #576574; }
+
+.tl-item .tl-date {
+    font-size: 0.7rem;
+    color: #576574;
+    min-width: 60px;
+}
+.tl-item .tl-content {}
+.tl-item .tl-title {
+    font-size: 0.9rem;
+    color: #f5f6fa;
+    font-weight: bold;
+}
+.tl-item.tl-status-planned .tl-title { color: #576574; }
+.tl-item.tl-status-upcoming .tl-title { color: #54a0ff; }
+.tl-item .tl-desc {
+    font-size: 0.78rem;
+    color: #576574;
+    margin-top: 0.2rem;
+}
+.tl-item .tl-type {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+    color: #3d3d3d;
+}

@@ -19,6 +19,7 @@
         <button onclick="showPage('crew')">Crew</button>
         <button onclick="showPage('programs')">Programs</button>
         <button onclick="showPage('vehicles')">Vehicles</button>
+        <button onclick="showPage('timeline')">Timeline</button>
     </nav>
 
     <main>
@@ -88,6 +89,17 @@
         <section id="page-vehicles" style="display:none">
             <h2 class="section-title">Launch Vehicles &amp; Aircraft</h2>
             <div id="vehicles-list"></div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section id="page-timeline" style="display:none">
+            <h2 class="section-title">KESA Timeline</h2>
+            <div class="timeline-legend">
+                <span class="tl-legend-item"><span class="tl-dot tl-completed"></span> Completed</span>
+                <span class="tl-legend-item"><span class="tl-dot tl-upcoming"></span> Upcoming</span>
+                <span class="tl-legend-item"><span class="tl-dot tl-planned"></span> Planned</span>
+            </div>
+            <div id="timeline-container"></div>
         </section>
     </main>
 

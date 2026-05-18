@@ -8,6 +8,7 @@ let programs = [];
 let vehicles = [];
 let stations = [];
 let news = [];
+let timeline = [];
 
 // --- DATA LOADING ---
 
@@ -29,6 +30,7 @@ async function loadAllData() {
     vehicles = await loadJSON('data/vehicles.json');
     stations = await loadJSON('data/stations.json');
     news = await loadJSON('data/news.json');
+    timeline = await loadJSON('data/timeline.json');
 
     renderAgency();
     renderHome();
@@ -36,6 +38,7 @@ async function loadAllData() {
     renderCrew();
     renderPrograms();
     renderVehicles();
+    renderTimeline();
     showPage('home');
 }
 
@@ -259,6 +262,42 @@ function renderVehicles() {
             <div class="veh-role">${v.role}</div>
             <div class="veh-figure">${v.figure}</div>
             ${variantHTML}
+        </div>`;
+    }).join('');
+}
+
+// --- RENDER: TIMELINE ---
+
+function renderTimeline() {
+    const container = document.getElementById('timeline-container');
+    const eraNames = {
+        0: 'Era 0 — Foundation',
+        1: 'Era 1 — Reaching Up',
+        2: 'Era 2 — Orbital Mastery',
+        3: 'Era 3 — Beyond Kerbin'
+    };
+
+    const eras = {};
+    timeline.forEach(item => {
+        if (!eras[item.era]) eras[item.era] = [];
+        eras[item.era].push(item);
+    });
+
+    container.innerHTML = Object.entries(eras).map(([era, items]) => {
+        const itemsHTML = items.map(item => {
+            const dateStr = item.date || '—';
+            return `<div class="tl-item tl-status-${item.status}">
+                <div class="tl-date">${dateStr}</div>
+                <div class="tl-content">
+                    <div class="tl-title">${item.title}</div>
+                    <div class="tl-desc">${item.description}</div>
+                </div>
+            </div>`;
+        }).join('');
+
+        return `<div class="timeline-era">
+            <div class="timeline-era-title">${eraNames[era] || 'Era ' + era}</div>
+            ${itemsHTML}
         </div>`;
     }).join('');
 }
